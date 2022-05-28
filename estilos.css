@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Odia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+* {
+    margin: 0;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+#bodyInicio {
+    background-image: url("./imagenes/fondo.jpg");
+}
+
+header,
+body,
+footer {
+    text-align: center;
+}
+
+#barraHeader {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    padding: 5px 10px 5px 0px;
+    margin: 0 400px 0 0;
+}
+
+#divHeader {
+    display: flex;
+    padding-left: 2px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 0 50px;
+}
+
+#barraHeader a {
+    text-decoration: solid;
+    color: #EDF2F4;
+    margin: 0.5em;
+}
+
+#inicio {
+    font-family: 'Oswald', sans-serif;
+    color: #EF233C;
+    font-size: 2em;
+    margin: 0.5em 0 0.5em 50px;
+    text-decoration: none;
+}
+
+#barraHeader a:hover {
+    color: #EF233C;
+}
+
+#contenedorMenu {
+    margin: 20em;
+    justify-content: center;
+    align-items: center;
+    line-height: 5em;
+}
+
+h1 {
+    line-height: 90%;
+}
+
+h2,
+h6 {
+    font-family: 'Anek Odia', sans-serif;
+    color: #EDF2F4;
+}
+
+#tituloUno {
+    font-family: 'Courgette', cursive;
+    color: #EF233C;
+    font-size: 4em;
+}
+
+#tituloDos {
+    font-family: 'DM Serif Display', serif;
+    color: #EDF2F4;
+    font-size: 3em;
+}
+
+#tituloTres {
+    margin: 60px;
+    font-size: 5em;
+    font-family: 'DM Serif Display', serif;
+    color: #EDF2F4;
+}
+
+#bodyPlatos {
+    background-color: #2B2D42;
+    background-image: url("./imagenes/fondo2.jpg");
+}
+
+.contenedorPlatos {
+    margin: 40px;
+    display: inline-grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.plato {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.plato:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.imgPlatos {
+    width: 500px;
+    height: 500px;
+    border: 5px solid #EF233C;
+}
+
+.nombrePlato {
+    font-family: 'DM Serif Display', serif;
+    color: #EF233C;
+    font-size: 1.2em;
+}
+
+#bodyInfo {
+    background-image: url("./imagenes/fondo3.jpg");
+}
+
+#infoFilaUno {
+    margin-top: 50px;
+    display: flex;
+}
+
+#itemUno {
+    height: 600px;
+    width: 55%;
+    margin-left: 80px;
+    background-color: #EF233C;
+}
+
+#itemDos {
+    height: 600px;
+    width: 35%;
+    background-color: #8D99AE;
+}
+
+#infoFilaDos {
+    height: 700px;
+    width: 90%;
+    background-color: #EDF2F4;
+    margin-left: 80px;
+}
+
+#video {
+    margin-top: 62px;
+}
+
+#infoFilaTres {
+    margin-bottom: 150px;
+    display: flex;
+}
+
+#itemTres {
+    height: 600px;
+    width: 35%;
+    background-color: #8D99AE;
+    margin-left: 80px;
+}
+
+#itemCuatro {
+    height: 600px;
+    width: 55%;
+    background-color: #EF233C;
+}
+
+.titulosInfo {
+    font-size: 5em;
+    text-align: justify;
+    font-family: 'Rubik Mono One', sans-serif;
+    margin: 180px 50px;
+    color: #EDF2F4;
+}
+
+.textosInfo {
+    font-size: x-large;
+    margin: 100px;
+    font-family: 'Koulen', cursive;
+    text-align: justify;
+}
+
+footer {
+    background-color: #EF233C;
+    position: absolute;
+    left: 0px;
+    height: 60px;
+    width: 100%;
+    bottom: 0px;
+}
+
+footer nav a {
+    color: #EDF2F4;
+    padding: 5px 10px;
+    margin: 1px;
+}
+
+footer nav a:hover {
+    color: #2B2D42;
+}
+
+#contenedorFooter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#boton{
+    background-color: #EF233C;
+}
+
+#formulario{
+    margin-top: 50px;
+}
+
+.etiqueta{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#bodyContacto{
+    background-image: url("./imagenes/chef.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Para celulares */
+@media only screen and (max-width: 600px) {
+    .contenedorPlatos {
+        margin: 0 0 100px 0;
+        display: inline-grid;
+        place-items: center;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1, 3fr);
+        grid-template-rows: 1fr;
+    }
+
+    #tituloTres {
+        margin: 40px auto;
+        width: 100%;
+    }
+
+    menu {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    #divHeader {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        justify-content: center;
+    }
+
+    #barraHeader {
+        margin: 0;
+    }
+
+    .imgPlatos {
+        width: 100%;
+        height: 330px;
+    }
+}
+
+/*Para tablets y notebooks*/
+@media only screen and (min-width: 600px) and (max-width: 992px){
+    menu {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contenedorPlatos {
+        margin: 15px 0 0 10px;
+        display: inline-grid;
+        place-items: center;
+        row-gap: 30px;
+        column-gap: 20px;
+        grid-template-columns: repeat(2, 3fr);
+        grid-template-rows: 1fr;
+    }
+    
+    #trufas{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .imgPlatos {
+        width: 90%;
+        height: 300px;
+    }
+
+    #tituloTres {
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    #barraHeader {
+        font-size: 1.2em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 50px;
+        margin-right: 10px;
+    }
+
+    #divHeader{
+        margin: 0 15px 7px 15px;
+    }
+
+    footer{
+        margin-bottom: 0;
+    }
+}

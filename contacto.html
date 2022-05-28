@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./imagenes/favicon.png"
+      type="image/x-icon"
+    />
+    <title>WikiRecetas | Contacto</title>
+    <script
+      src="https://kit.fontawesome.com/5721e41385.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./estilos.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body id="bodyContacto">
+    <header id="headerPlatos">
+      <div id="divHeader">
+        <a id="inicio" href="index.html">WIKIRECETAS</a>
+        <nav id="barraHeader">
+          <a href="platos.html">PLATOS</a>
+          <a href="postres.html">POSTRES</a>
+          <a href="about-us.html">ABOUT US</a>
+          <a href="contacto.html">CONTACTANOS</a>
+        </nav>
+      </div>
+    </header>
+    <menu>
+      <form
+        class="w-25 mx-auto"
+        id="formulario"
+        onsubmit="return validarDatos();"
+      >
+        <div class="form-group">
+          <label for="nombre" class="form-label etiqueta">Nombre (*)</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Ingrese su nombre"
+            id="nombre"
+          />
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="apellido" class="form-label etiqueta">Apellido (*)</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Ingrese su apellido"
+            id="apellido"
+          />
+        </div>
+        <br />
+        <div class="form-group col-auto">
+          <label for="edad" class="form-label etiqueta">Edad (*)</label>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Ingrese su edad"
+            id="edad"
+            min="1"
+          />
+        </div>
+        <br />
+        <div class="form-group col-auto">
+          <label for="nombre" class="form-label etiqueta">E-Mail (*)</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Ingrese su correo electrónico"
+            id="correo"
+          />
+        </div>
+        <br />
+        <label for="comentario" class="form-label etiqueta">Mensaje (*)</label>
+        <br />
+        <textarea
+          class="form-control"
+          name="comentario"
+          id="mensaje"
+          cols="80"
+          rows="13"
+        ></textarea>
+        <br />
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="check" />
+          <label class="form-check-label" for="check"
+            >Acepto a que me envíen novedades al correo</label
+          >
+        </div>
+        <br />
+        <div class="text-center">
+          <button type="submit" class="btn btn-danger" id="boton">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </menu>
+    <footer>
+      <div id="contenedorFooter">
+        <h6>Derechos reservados @2022</h6>
+        <nav>
+          <a href="https://www.facebook.com/" target="blank"
+            ><i class="fa-brands fa-facebook fa-2xl"></i
+          ></a>
+          <a href="https://twitter.com/" target="blank"
+            ><i class="fa-brands fa-twitter fa-2xl"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="blank"
+            ><i class="fa-brands fa-instagram fa-2xl"></i
+          ></a>
+        </nav>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
